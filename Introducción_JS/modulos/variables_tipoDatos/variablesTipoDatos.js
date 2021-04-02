@@ -23,3 +23,10 @@ let edad = 23;
 let edad = 23;              //NUMBER (entero y decimal)
 let nombre = 'Fernando';    //STRING (comillas simples y dobles)
 let esCierto = true;        //BOOLEAN (verdadero o falso)
+
+//  OPERADORES
+
+/*
+
+
+*/
