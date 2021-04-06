@@ -81,13 +81,14 @@
 
 /*
     DE CONCATENACIÓN
-    Sirve para unir cadenas de texto. Devuekve otra cadena del texto.
+    Sirve para unir cadenas de texto. Devuelve otra cadena del texto.
 */
 
     let nombre = 'Andres';
     let apellido = 'García';
     let nombreCompleto = nombre + ' ' + apellido;
-
+    let oracionNombre = "Mi nombre es " + nombre + "y mi apellido es " + apellido;
+    
     let fila = 'M';
     let asiento = 7;
     let ubicación = fila + asiento;     // 'M7' como string
@@ -101,3 +102,15 @@
     let siguienteNumero = unNumero + 1;
     console.log(siguienteNumero);
     // Se imprimirá por pantalla el valor que tiene asignado la variable siguienteNumero que será 125.
+
+/*
+    STRING
+    A los datos del tipo string se los conoce como cadenas de texto y nos van a permitir representar cualquier combinación de letras, números y/o símbolos.
+    Para definir un string es necesario que el contenido en cuestión esté entre comillas, por ejemplo:
+    "Juan"
+    "Mi nombre es Juan"
+    "125 + 125 = 250"
+*/
+
+let miPlaneta = "Tierra";
+
