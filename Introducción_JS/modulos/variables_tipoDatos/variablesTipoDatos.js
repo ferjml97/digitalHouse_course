@@ -92,4 +92,12 @@
     let asiento = 7;
     let ubicación = fila + asiento;     // 'M7' como string
 
-    
+/*
+    VARIABLES Y OPERACIONES
+    Las variables nos permiten reutilizar el dato asignado en la misma con solo invocar su nombre.
+*/
+
+    let unNumero = 124;
+    let siguienteNumero = unNumero + 1;
+    console.log(siguienteNumero);
+    // Se imprimirá por pantalla el valor que tiene asignado la variable siguienteNumero que será 125.
