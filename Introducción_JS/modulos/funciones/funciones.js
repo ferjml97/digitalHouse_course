@@ -165,8 +165,3 @@
     }
     console.log(escribirCartelito("Ing.","Fernando","Maldonado"));
 
-    /*
-    
-    
-    
-    */ 
