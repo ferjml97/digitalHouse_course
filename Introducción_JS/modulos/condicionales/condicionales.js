@@ -18,5 +18,19 @@
         (10 > 15) && (10 != 20) 
     //    false  ----   true   --->   false
 
+        (12 % 4 == 0) && (12 != 24) 
+    //        true   ----   true   --->   true
 
+//  3.1.2 OR (||) - Al menos un valor debe evaluar como true
 
+        (10 > 15) || (10 != 20) 
+    //    false  ----   true   --->   true
+
+        (12 % 4 == 0) || (12 != 24) 
+    //        true   ----   true   --->   true
+
+//  3.1.3   NOT (!) - Niega la condición. si era true será false y viceversa.
+
+    !false  // true
+    !(10 > 15)  // true
+    
