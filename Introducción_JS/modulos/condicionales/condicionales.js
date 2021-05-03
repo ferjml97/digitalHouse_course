@@ -350,3 +350,73 @@
     console.log(esNumeroDeLaSuerte(10));
     console.log(esNumeroDeLaSuerte(15));
     console.log(esNumeroDeLaSuerte(30));
+
+    /*  EJERCICIO
+     *  Escribir la función puedeJubilarse() que recibe por parámetro la edad, el género y además, 
+     *  los años de aportes jubilatorios (en ese orden) que posee una persona.
+     *  Tener en cuenta que el mínimo de edad para realizar el trámite para las mujeres (género "F") es de 60 años, 
+     *  mientras que para los hombres (género "M") es 65. En ambos casos, se deben contar con al menos 30 años de aportes jubilatorios.
+    */
+    
+    function puedeJubilarse(edad, genero, aniosAporte) {
+        return  genero == "F" && edad >= 60 && aniosAporte >= 30 || genero == "M" && edad >= 65 && aniosAporte >= 30 
+    }
+    
+    console.log(puedeJubilarse(63, "F", 32));
+    console.log(puedeJubilarse(53, "F", 32));
+    console.log(puedeJubilarse(63, "F",  22));
+    console.log(puedeJubilarse(43, "M", 32));
+    console.log(puedeJubilarse(73, "M", 12));
+    console.log(puedeJubilarse(65, "M", 32));
+
+//  3.9 IDA AL PARQUE DE DIVERSIONES!
+
+    /*
+     *  En un parque de diversiones instalaron una nueva montaña rusa y nos pidieron ayuda para que le avisemos a las personas, 
+     *  si pueden subirse o no, antes de hacer la fila. Los requisitos para que una persona pueda subir a la atracción son:
+     *  --> Alcanzar la altura mínima de 1.5m (o 1.2m si está acompañada por un adulto).
+     *  --> No tener ninguna afección cardíaca.
+    */
+    
+    /*  EJERCICIO
+     *  Definir la función puedeSubirse() , la cual, recibiendo 3 parámetros:
+     *      1.  alturaPersona (number)
+     *      2.  vieneConCompania (booleano)
+     *      3.  tieneAfeccionCardiaca (booleano)
+     *  Retorne true  o  false  según el caso. Tené en cuenta, las condiciones necesarias, mencionadas anteriormente.
+    */
+
+    function puedeSubirse(alturaPersona, vieneConCompania, tieneAfeccionCardiaca){
+        return tieneAfeccionCardiaca == false && alturaPersona >= 1.5 || tieneAfeccionCardiaca == false && alturaPersona >= 1.2 && vieneConCompania == true;
+    }
+    
+    console.log(puedeSubirse( 1.1, true, false));
+    console.log(puedeSubirse( 1.2, true, true));
+    console.log(puedeSubirse( 1.5, true, false));
+
+//  3.10 PREMIACIÓN
+
+    /*  EJERCICIO
+     *  Desarrollar la función medallaSegunPuesto() , la cual retorne la medalla que le corresponde a los primeros puestos, según la siguiente lógica:
+     *  Primer puesto: le corresponde "Oro".
+     *  Segundo puesto: le corresponde "Plata".     
+     *  Tercer puesto: le corresponde "Bronce". 
+     *  Otros puestos: le corresponde "Seguí participando".
+    */
+
+    function medallaSegunPuesto(n){
+        if(n == 1){
+            return "Oro";
+        }else if(n == 2){
+            return "Plata";
+        }else if(n==3){
+            return "Bronce";
+        }else{
+            return "Seguí participando";
+        }
+    }
+    
+    console.log(medallaSegunPuesto(1));
+    console.log(medallaSegunPuesto(3));
+    console.log(medallaSegunPuesto(14));
+    console.log(medallaSegunPuesto(4));
