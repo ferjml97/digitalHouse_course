@@ -78,7 +78,7 @@
         acceso = 'permitido';
     }
 
-    /**
+    /*
      *  1.  Declaramos la variable edad y le asignamos un valor (19).
      *  2.  Declaramos la variable acceso y le asignamos un string vacío con intención de asignarle
      *      un nuevo valor de acuerdo el resultado de las condicionales declaradas.
@@ -119,7 +119,7 @@
 
 //  3.4 QUÉ TAL SI NO?
 
-    /**
+    /*
      *  El condicional else nos permite ejecutar un bloque de código, en el caso que la condición del if no se cumpla, 
      *  es decir, no sea verdadera. A diferencia del if, la estructura del else solo tiene 2 partes:
      *  1. La palabra reservada else.
