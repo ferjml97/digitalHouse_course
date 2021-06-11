@@ -28,7 +28,48 @@
         console.log(salioCara);
         console.log(listaDeListasDeNumeros);
 
-    //4.3   ARRAY VACIO
+    //  4.3 ARRAY VACIO
 
     
-    let otroArrayVacio = [];
+        let otroArrayVacio = [];
+
+    //  4.4 METODOS DE ARRAY
+
+        /*  Los arrays son un tipo especial de objetos, y se dispone de un montón de métodos
+            para trabajar con ellos.
+        */
+
+        /*  .length()
+            INDICA EL NUMERO DE ELEMENTOS QUE TIENE UN ARRAY.
+        */
+
+        let cursos = ['Programación', 'UX', 'Data'];
+
+        /*  .push()
+            AGREGA uno o varios ELEMENTOS AL FINAL del array.
+            - RECIBE uno o mas elementos como parametrsos
+            - RETORNA la nueva longitud del array
+        */
+
+        let colores = ['Rojo', 'Naranja', 'Azul'];
+        colores.push('Violeta');
+        console.log(colores);
+        //  ['Rojo', 'Naranja', 'Azul', 'Violeta']
+        colores.push('Gris','Oro');
+        console.log(colores);
+        //  ['Rojo', 'Naranja', 'Azul', 'Violeta', 'Gris', 'Oro']
+
+        /*  .pop()
+            QUITA el ULTIMO ELEMENTO de un array
+            - NO RECIBE parametros
+            - DEVUELVE el elemento eliminado
+        */
+
+        let series = ['Mad Men', 'Breakin Bad', 'The Mask'];
+
+        let ultSerie = series.pop();
+
+        console.log(series);    //  ['Mad Men', 'Breakin Bad', 'The Mask']
+        console.log(ultSerie);  //  ['The Mask']
+
+        
